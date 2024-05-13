@@ -1,16 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-      <!-- 
-    More Templates Visit ==> ProBootstrap.com
-    Free Template by ProBootstrap.com under the License Creative Commons 3.0 ==> (probootstrap.com/license)
 
-    IMPORTANT: You can do whatever you want with this template but you need to keep the footer link back to ProBootstrap.com
-    -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<title>Places &mdash; Free HTML5 Bootstrap 4 Theme by ProBootstrap.com</title>
+		<title>Chelebi AviaSales</title>
 		<meta name="description" content="Free Bootstrap 4 Theme by ProBootstrap.com">
 		<meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
     
@@ -39,7 +35,6 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
       <div class="container">
-        <a class="navbar-brand" href="/">Places</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-menu" aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
           <span><i class="ion-navicon"></i></span>
         </button>
@@ -63,15 +58,12 @@
         <div class="row align-items-center">
           <div class="col-md">
             <h2 class="heading mb-2 display-4 font-light probootstrap-animate">Explore The World With Ease</h2>
-            <p class="lead mb-5 probootstrap-animate">
-              
-
+            <p class="lead mb-5 probootstrap-animate">      
             </p>
-              <a href="onepage.html" role="button" class="btn btn-primary p-3 mr-3 pl-5 pr-5 text-uppercase d-lg-inline d-md-inline d-sm-block d-block mb-3">See OnePage Verion</a> 
             </p>
           </div> 
-          <div class="col-md probootstrap-animate">
-            <form action="#" class="probootstrap-form">
+          <div class="col-jmd probootstrap-animate">
+            <form id="myForm" action="#"  method="post" class="probootstrap-form">
               <div class="form-group">
                 <div class="row mb-3">
                   <div class="col-md">
@@ -80,17 +72,18 @@
 
                       <label for="id_label_single" style="width: 100%;">
                         <select class="js-example-basic-single js-states form-control" id="id_label_single" style="width: 100%;">
-                          <option value="Australia">Australia</option>
-                          <option value="Japan">Japan</option>
-                          <option value="United States">United States</option>
-                          <option value="Brazil">Brazil</option>
-                          <option value="China">China</option>
-                          <option value="Israel">Israel</option>
-                          <option value="Philippines">Philippines</option>
-                          <option value="Malaysia">Malaysia</option>
-                          <option value="Canada">Canada</option>
-                          <option value="Chile">Chile</option>
-                          <option value="Chile">Zimbabwe</option>
+                          <option value="Baku">Baku</option>
+                          <option value="Sydney">Sydney</option>
+                          <option value="Tokyo">Tokyo</option>
+                          <option value="Miami">Miami</option>
+                          <option value="Dubai">Dubai</option>
+                          <option value="Shanghai">Shanghai</option>
+                          <option value="Los Angeles">Los Angeles</option>
+                          <option value="O'Hare">O'Hare</option>
+                          <option value="Amsterdam">Amsterdam</option>
+                          <option value="Frankfurt">Frankfurt</option>
+                          <option value="Kuala Lumpur">Kuala Lumpur</option>
+                          <option value="Istanbul">Istanbul</option>
                         </select>
                       </label>
 
@@ -103,17 +96,17 @@
                       <div class="probootstrap_select-wrap">
                         <label for="id_label_single2" style="width: 100%;">
                         <select class="js-example-basic-single js-states form-control" id="id_label_single2" style="width: 100%;">
-                          <option value="Australia">Australia</option>
-                          <option value="Japan">Japan</option>
-                          <option value="United States">United States</option>
-                          <option value="Brazil">Brazil</option>
-                          <option value="China">China</option>
-                          <option value="Israel">Israel</option>
-                          <option value="Philippines">Philippines</option>
-                          <option value="Malaysia">Malaysia</option>
-                          <option value="Canada">Canada</option>
-                          <option value="Chile">Chile</option>
-                          <option value="Chile">Zimbabwe</option>
+                          <option value="Tokyo">Tokyo</option>
+                          <option value="Sydney">Sydney</option>
+                          <option value="Miami">Miami</option>
+                          <option value="Dubai">Dubai</option>
+                          <option value="Shanghai">Shanghai</option>
+                          <option value="Los Angeles">Los Angeles</option>
+                          <option value="O'Hare">O'Hare</option>
+                          <option value="Amsterdam">Amsterdam</option>
+                          <option value="Frankfurt">Frankfurt</option>
+                          <option value="Kuala Lumpur">Kuala Lumpur</option>
+                          <option value="Istanbul">Istanbul</option>
                         </select>
                       </label>
                       </div>
@@ -127,7 +120,7 @@
                       <label for="probootstrap-date-departure">Departure</label>
                       <div class="probootstrap-date-wrap">
                         <span class="icon ion-calendar"></span> 
-                        <input type="text" id="probootstrap-date-departure" class="form-control" placeholder="">
+                        <input type="text" id="probootstrap-date-departure" class="form-control" placeholder="Select">
                       </div>
                     </div>
                   </div>
@@ -136,7 +129,7 @@
                       <label for="probootstrap-date-arrival">Arrival</label>
                       <div class="probootstrap-date-wrap">
                         <span class="icon ion-calendar"></span> 
-                        <input type="text" id="probootstrap-date-arrival" class="form-control" placeholder="">
+                        <input type="text" id="probootstrap-date-arrival" class="form-control" placeholder="Select">
                       </div>
                     </div>
                   </div>
@@ -156,11 +149,15 @@
           </div>
         </div>
       </div>
-    
+      <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+          event.preventDefault();
+          window.location.href = "register.html";
+        });
+      </script>
     </section>
     <!-- END section -->
     
-
     <section class="probootstrap_section" id="section-feature-testimonial">
       <div class="container">
         <div class="row justify-content-center mb-5">
@@ -170,8 +167,8 @@
               <p class="lead mb-4"><em>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</em></p>
               <p class="probootstrap-author">
                 <a href="https://probootstrap.com/" target="_blank">
-                  <img src="assets/images/person_1.jpg" alt="Free Template by ProBootstrap.com" class="rounded-circle">
-                  <span class="probootstrap-name">James Smith</span>
+                  <img src="assets/images/Chelebi.png" alt="Free Template by ProBootstrap.com" class="rounded-circle">
+                  <span class="probootstrap-name">Gulsum Chelebi</span>
                   <span class="probootstrap-title">Chief Executive Officer</span>
                 </a>
               </p>
